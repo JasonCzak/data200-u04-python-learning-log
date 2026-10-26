@@ -1,0 +1,307 @@
+\documentclass[12pt]{article}
+
+% ---------- Packages ----------
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{caption}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{hyperref}
+
+% ---------- Student information: EDIT THESE ----------
+\newcommand{\studentname}{Your Name}
+\newcommand{\coursename}{DATA 200}
+\newcommand{\assignmentname}{Python Learning Progress Log}
+\newcommand{\instructorname}{Instructor Name}
+\newcommand{\semestername}{Semester and Year}
+\newcommand{\submissiondate}{Submission Date}
+
+% ---------- Accessible PDF metadata ----------
+\hypersetup{
+  pdftitle={Python Learning Progress Log},
+  pdfauthor={\studentname},
+  pdfsubject={Documented progress in learning Python},
+  pdfkeywords={Python, programming, learning log, LaTeX, DATA 200},
+  pdfdisplaydoctitle,
+  colorlinks=true,
+  linkcolor=blue!55!black,
+  urlcolor=blue!55!black,
+  citecolor=blue!55!black
+}
+
+% ---------- General formatting ----------
+\setstretch{1.08}
+\setlength{\parindent}{0pt}
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+\setlength{\headheight}{15pt}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\assignmentname}
+\rhead{\studentname}
+\cfoot{Page \thepage\ of \pageref*{LastPage}}
+\setlist[itemize]{leftmargin=1.5em}
+
+% ---------- Colors ----------
+\definecolor{codegreen}{RGB}{0,100,0}
+\definecolor{codegray}{RGB}{90,90,90}
+\definecolor{codepurple}{RGB}{110,30,120}
+\definecolor{codeblue}{RGB}{0,60,145}
+\definecolor{lightgray}{RGB}{246,246,246}
+
+% ---------- Python code style ----------
+\lstdefinestyle{pythonstyle}{
+  language=Python,
+  backgroundcolor=\color{lightgray},
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{codeblue}\bfseries,
+  commentstyle=\color{codegreen},
+  stringstyle=\color{codepurple},
+  numberstyle=\tiny\color{codegray},
+  numbers=left,
+  numbersep=8pt,
+  frame=single,
+  rulecolor=\color{black!25},
+  breaklines=true,
+  breakatwhitespace=false,
+  showstringspaces=false,
+  tabsize=4,
+  columns=fullflexible,
+  keepspaces=true,
+  captionpos=b
+}
+\lstset{style=pythonstyle}
+
+% ---------- Screenshots: a placeholder box appears until the file exists ----------
+\newcommand{\screenshot}[3]{%
+  \begin{figure}[H]
+    \centering
+    \IfFileExists{#1}{%
+      \includegraphics[width=0.88\textwidth,alt={#2}]{#1}%
+    }{%
+      \fbox{\parbox[c][2.0in][c]{0.82\textwidth}{\centering
+      \textbf{YOUR screenshot here}\\[0.4em]
+      Save it as \texttt{\detokenize{#1}} in this folder.}}
+    }%
+    \caption{#3}
+  \end{figure}
+}
+
+\begin{document}
+
+% ==========================================================
+% TITLE PAGE
+% ==========================================================
+\begin{titlepage}
+  \centering
+  \vspace*{1.2in}
+  {\Huge\bfseries \assignmentname\par}
+  \vspace{0.35in}
+  {\Large A Weekly Record of Python Practice and Growth\par}
+  \vfill
+  \begin{tabular}{rl}
+    \textbf{Name:} & \studentname \\
+    \textbf{Course:} & \coursename \\
+    \textbf{Instructor:} & \instructorname \\
+    \textbf{Semester:} & \semestername \\
+    \textbf{Submission date:} & \submissiondate
+  \end{tabular}
+  \vfill
+\end{titlepage}
+
+\tableofcontents
+\clearpage
+
+% ==========================================================
+\section{Overview}
+% Write at least one developed paragraph. Replace this guidance.
+My goal in this assignment is to become more proficient and independent in Python. Over the course of the assignment, I will practice regularly, document both successful and unsuccessful attempts, and preserve examples of the programs I create. I will focus not only on making code run, but also on understanding why it works, communicating its purpose through comments, and improving the organization and reliability of my programs. I expect this record to show how my problem-solving process and programming vocabulary develop over time.
+
+\section{Learning Methods and Resources}
+% Write at least one developed paragraph. Identify the resources used and how each helped.
+I will use several learning methods, including class notes, assigned readings, independent practice, official Python documentation, coding exercises, and video tutorials. One class resource is the tutorial \href{https://www.youtube.com/watch?v=fWjsdhR3z3c}{Learn Python in Less than 10 Minutes for Beginners}. I may also use practice platforms such as LeetCode, provided that I explain what I attempted and include code that I personally understand. For every resource, I will record what I studied, how I practiced it, what difficulty I encountered, and how I verified that my program worked.
+
+\section{Expectations for the Weekly Log}
+The log must contain at least four substantive entries per week. Each entry should include the date, time spent, learning goal, resource or method used, a paragraph explaining the work completed, at least one uniquely named Python file, a brief description of the program, and a screenshot showing that the code ran successfully on your own computer. Every Python program must be submitted as its own \texttt{.py} file. Comments should become more detailed and technically precise as proficiency increases.
+
+% ==========================================================
+\section{Weekly Learning Log}
+% Duplicate the entire weekly subsection when adding another week.
+
+\subsection{Week 1: [Starting date]--[Ending date]}
+
+\subsubsection{Entry 1: [Date]}
+\begin{description}[style=nextline,leftmargin=1.5em,labelindent=0pt]
+  \item[Time spent:] [Example: 45 minutes]
+  \item[Learning focus:] [Example: variables, data types, input, and output]
+  \item[Resources used:] [Class notes, tutorial title, documentation page, exercise set, etc.]
+  \item[Python file:] \texttt{week01\_entry01\_descriptive\_name.py}
+\end{description}
+
+\textbf{Progress narrative.} Write at least one developed paragraph explaining what you attempted, what you learned, where you had difficulty, what changes you made, and how you checked the result. Be specific. For example, identify an error message, an incorrect output, or a design decision rather than writing only ``I practiced Python.''
+
+\textbf{Program purpose.} Explain what the associated program does, what input it expects, what output it produces, and which Python ideas it demonstrates.
+
+% OPTION A: Paste the code directly between the lstlisting tags.
+\begin{lstlisting}[caption={Entry 1 Python code.},label={lst:w1e1}]
+# File: week01_entry01_descriptive_name.py
+# Replace this example with the code created during this log entry.
+
+name = input("What is your name? ")
+print(f"Hello, {name}! Welcome to Python practice.")
+\end{lstlisting}
+
+% OPTION B: Instead of pasting code above, place the .py file in the same
+% folder and use the command below. Do not use both options for the same code.
+% \lstinputlisting[caption={Entry 1 Python code.},label={lst:w1e1file}]{week01_entry01_descriptive_name.py}
+
+\textbf{Run result.} State what happened when the code ran and whether the output matched your expectation. If a test failed, explain the correction before showing the final successful run.
+
+\screenshot{week01_entry01_output.png}
+  {Terminal or development environment showing the successful output of the Entry 1 Python program.}
+  {Successful execution of the program for Week 1, Entry 1.}
+
+\subsubsection{Entry 2: [Date]}
+\begin{description}[style=nextline,leftmargin=1.5em,labelindent=0pt]
+  \item[Time spent:] [Enter duration]
+  \item[Learning focus:] [Enter topic]
+  \item[Resources used:] [Enter resources]
+  \item[Python file:] \texttt{week01\_entry02\_descriptive\_name.py}
+\end{description}
+
+\textbf{Progress narrative.} [Write at least one developed paragraph.]
+
+\textbf{Program purpose.} [Explain the program, its input, output, and skills demonstrated.]
+
+\begin{lstlisting}[caption={Entry 2 Python code.},label={lst:w1e2}]
+# File: week01_entry02_descriptive_name.py
+# Paste the complete code for this entry here.
+\end{lstlisting}
+
+\textbf{Run result.} [Explain how you tested the program and interpret the output.]
+
+\screenshot{week01_entry02_output.png}
+  {Screenshot showing the successful output of the Entry 2 Python program.}
+  {Successful execution of the program for Week 1, Entry 2.}
+
+\subsubsection{Entry 3: [Date]}
+\begin{description}[style=nextline,leftmargin=1.5em,labelindent=0pt]
+  \item[Time spent:] [Enter duration]
+  \item[Learning focus:] [Enter topic]
+  \item[Resources used:] [Enter resources]
+  \item[Python file:] \texttt{week01\_entry03\_descriptive\_name.py}
+\end{description}
+
+\textbf{Progress narrative.} [Write at least one developed paragraph.]
+
+\textbf{Program purpose.} [Explain the program, its input, output, and skills demonstrated.]
+
+\begin{lstlisting}[caption={Entry 3 Python code.},label={lst:w1e3}]
+# File: week01_entry03_descriptive_name.py
+# Paste the complete code for this entry here.
+\end{lstlisting}
+
+\textbf{Run result.} [Explain how you tested the program and interpret the output.]
+
+\screenshot{week01_entry03_output.png}
+  {Screenshot showing the successful output of the Entry 3 Python program.}
+  {Successful execution of the program for Week 1, Entry 3.}
+
+\subsubsection{Entry 4: [Date]}
+\begin{description}[style=nextline,leftmargin=1.5em,labelindent=0pt]
+  \item[Time spent:] [Enter duration]
+  \item[Learning focus:] [Enter topic]
+  \item[Resources used:] [Enter resources]
+  \item[Python file:] \texttt{week01\_entry04\_descriptive\_name.py}
+\end{description}
+
+\textbf{Progress narrative.} [Write at least one developed paragraph.]
+
+\textbf{Program purpose.} [Explain the program, its input, output, and skills demonstrated.]
+
+\begin{lstlisting}[caption={Entry 4 Python code.},label={lst:w1e4}]
+# File: week01_entry04_descriptive_name.py
+# Paste the complete code for this entry here.
+\end{lstlisting}
+
+\textbf{Run result.} [Explain how you tested the program and interpret the output.]
+
+\screenshot{week01_entry04_output.png}
+  {Screenshot showing the successful output of the Entry 4 Python program.}
+  {Successful execution of the program for Week 1, Entry 4.}
+
+% ==========================================================
+% COPY THE WEEK 1 SUBSECTION ABOVE FOR EACH ADDITIONAL WEEK.
+% Update dates, filenames, listing labels, screenshot names, and captions.
+% Every \label must be unique.
+% ==========================================================
+
+\clearpage
+\section{Details of Skills Gained}
+% Each major skill should receive a specific explanation, not just a list.
+\subsection{Skill 1: [Name of Python Skill]}
+Explain what the skill is, how you practiced it, which log entries demonstrate it, and what evidence shows that you can now use it successfully. Reference a code listing when useful, such as Listing~\ref{lst:w1e1}.
+
+\subsection{Skill 2: [Name of Python Skill]}
+Explain your growth using specific code, vocabulary, and evidence. Distinguish between recognizing a concept and being able to apply it independently.
+
+\subsection{Skill 3: [Name of Python Skill]}
+Explain your growth using specific code, vocabulary, and evidence. Possible topics include variables, data types, conditional statements, loops, functions, lists, dictionaries, file input/output, NumPy, plotting, debugging, testing, or exception handling.
+
+\section{Overall Reflection}
+Write at least one developed paragraph evaluating your progress. Identify a skill that improved substantially, a challenge that remains, and a specific next step. Use examples from the log rather than making only general statements. Explain how your code organization, commenting, testing, and independence changed across the assignment.
+
+\section{Reproducibility Statement}
+All Python programs referenced in this report are submitted as separate, uniquely named \texttt{.py} files. The screenshots document successful execution of the submitted programs. The code listings in this report match the submitted source files. Any required data files are also included, and filenames have been preserved so that the programs can be rerun from the submitted folder.
+
+\section{Submission Checklist}
+\begin{itemize}
+  \item Compiled PDF report created from this LaTeX source
+  \item LaTeX source file (\texttt{.tex})
+  \item At least four complete log entries for every required week
+  \item At least one unique Python file for every log entry
+  \item Complete code included verbatim in the report
+  \item Explanation of what each program does
+  \item Screenshot showing each program running successfully on your own computer
+  \item Explanation of how each program was tested
+  \item Increasingly detailed comments in the Python files
+  \item Details of skills gained
+  \item Overall reflection and reproducibility statement
+  \item Any data files needed to run the programs
+  \item Filenames in the report that exactly match the submitted files
+  \item No private usernames, passwords, tokens, or unrelated personal data in the code or screenshots
+  \item All files uploaded
+\end{itemize}
+
+\appendix
+\section{Recommended File-Naming Pattern}
+Use filenames that identify both the log entry and the purpose of the program. For example:
+\begin{lstlisting}[language={},numbers=none]
+python_progress_log.tex
+python_progress_log.pdf
+week01_entry01_greeting.py
+week01_entry01_output.png
+week01_entry02_temperature_converter.py
+week01_entry02_output.png
+week01_entry03_loop_practice.py
+week01_entry03_output.png
+week01_entry04_list_statistics.py
+week01_entry04_output.png
+\end{lstlisting}
+
+\section{AI-Use Note}
+A later part of the course covers responsible use of generative AI. Until then, write your entries without AI tools. For entries written after that discussion, use AI only as the course policy allows, and document every use here: identify the tool, describe the task for which it was used, and explain how you checked the resulting code or advice. Do not claim authorship or understanding of code that you cannot explain. If you did not use an AI tool, say so in one sentence.
+
+\end{document}

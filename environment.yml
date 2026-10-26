@@ -1,0 +1,13 @@
+name: data200
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy=2.5.4
+  - pandas=3.1.0
+  - matplotlib=3.11.2
+  - jupyterlab=4.6.4
+  - ipykernel=7.4.0
+  - nbclient=0.11.0
+  - nbformat=5.11.1
+  - pytest=9.1.1

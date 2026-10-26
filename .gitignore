@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# LaTeX build files (keep the .tex and the compiled handout and sample .pdf)
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*~
+
+# Figures you create; expected output for comparison lives in figures/reference/ and is kept.
+figures/*.png
+figures/*.jpg
+
+# Your own log's PDF (you submit it separately); the fictional sample's PDF is kept.
+report/*.pdf
+!report/fictional-sample-entries.pdf

@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use or adapt these materials, please cite them as below."
+type: software
+title: "DATA 200: Python Learning Log"
+abstract: >-
+  Course materials for DATA 200: Introduction to Data Science at James Madison
+  University. A semester-long Python learning log: at least four entries a week,
+  each with its own Python file, the complete code in a LaTeX report, a screenshot
+  of a successful run, and a reflection; with a report template and four
+  fictional sample entries.
+authors:
+  - family-names: Czak
+    given-names: Jason E.
+    affiliation: James Madison University
+repository-code: "https://github.com/JasonCzak/data200-u04-python-learning-log"
+license:
+  - MIT
+  - CC-BY-NC-4.0
+version: "1.0.0"
+date-released: "2026-10-26"
+keywords:
+  - data science education
+  - python
+  - learning log
+  - reproducibility
+  - latex

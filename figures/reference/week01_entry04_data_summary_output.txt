@@ -1,0 +1,4 @@
+Data: [12, 18, 25, 30, 22, 16, 19]
+Minimum: 12
+Maximum: 30
+Average: 20.29
